@@ -1574,8 +1574,8 @@ module.exports = renderWaveElement;
 
 var renderWaveElement = require('./render-wave-element.js');
 
-function renderWaveForm (index, source, output, notFirstSignal) {
-    renderWaveElement(index, source, document.getElementById(output + index), window.WaveSkin, notFirstSignal);
+function renderWaveForm (index, source, output, notFirstSignal, options) {
+    renderWaveElement(index, source, document.getElementById(output + index), window.WaveSkin, notFirstSignal, options);
 }
 
 module.exports = renderWaveForm;
